@@ -1,19 +1,15 @@
-var Cylon = require("cylon");
+var Cylon = require('cylon');
 
-//Initialize the robot
 Cylon.robot({
-	//Change the port to the correct port for your Arduino.
-	connections: {
-		arduino : { adaptor: 'firmata', port: '/dev/ttyACM0'}
-	},
+  connections: {
+    arduino: { adaptor: 'firmata', port: '/dev/ttyACM0' }
+  },
 
-	devices: {
-		led : { driver : 'led', pin: 13}
-	},
+  devices: {
+    led: { driver: 'led', pin: 11}
+  },
 
-	work: function(my) {
-		every((1).second(), function() {
-			my.led.toggle();
-		})
-	}
+  work: function(my) {
+    every((1).second(), my.led.toggle);
+  }
 }).start();

@@ -1,0 +1,13 @@
+{
+  "name":     "Controle-led-rgb",
+  "author": "Pineli <carlospineli@gmail.com> (http://www.pineli.com/)",
+  "author":   "Morvana Bonin<morvanabonin@gmail.com> (http://www.morvanabonin.org/)",
+  "version":  "1.0.0",
+  "description": "Controlando Led RGB com NodeJS + Socke.io + Cylon.js + Arduino",  
+  "dependencies": {
+    "express": "~4.0",
+    "socket.io":">= 1.0.2",
+    "cylon": "latest",
+    "serialport": "1.4.10"
+  }
+}
