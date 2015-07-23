@@ -13,4 +13,4 @@
     socket.on('retorno',function(data){
     console.log(data.hex);
     });
-}(jQuery);
+}(window.jQuery);
