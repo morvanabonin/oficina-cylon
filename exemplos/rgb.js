@@ -8,9 +8,9 @@ Cylon.robot({
     },
 
     devices : {
-        red : { driver : 'led', pin: 11},
-        green : { driver : 'led', pin: 12},
-        blue : { driver : 'led', pin: 13}
+        red : { driver : 'led', pin: 3},
+        green : { driver : 'led', pin: 5},
+        blue : { driver : 'led', pin: 6}
     },
 
     work: function(my) {
