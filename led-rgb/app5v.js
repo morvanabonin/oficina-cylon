@@ -3,6 +3,7 @@ var express = require('express'),
     server = require('http').Server(app),
     io = require('socket.io')(server),
     five = require("johnny-five"),
+    cylon = require("cylon"),
 	led5V;
 
 app.disable('x-powered-by');
